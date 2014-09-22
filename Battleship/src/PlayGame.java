@@ -6,6 +6,7 @@ public class PlayGame
 		{
 		Layout.createLayout();
 		Layout.display();
+		Choosing.inputFirstChoice();
 
 		}
 
