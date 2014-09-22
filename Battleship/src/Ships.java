@@ -10,10 +10,15 @@ public class Ships
 		shipValue = sv;
 		shipName = sn;
 		}
-	public static void main(String[] args)
-		{
 		
-
-		}
-
+	public static void main(String[] args)
+		
+		static ArrayList <Layout> data = new ArrayList <Layout>();
+			{
+		data.add(new Ship("Aircraft carrier" , 4));
+		data.add(new Ship("Battleship", 3));
+		data.add(new Ship("Submarine", 2));
+		
+		
+			}
 	}
