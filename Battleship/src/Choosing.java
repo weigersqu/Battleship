@@ -2,41 +2,61 @@ import java.util.Scanner;
 public class Choosing
 	{
 	static String firstChoice;
+	static String secondChoice;
 	static int firstRowChoice, firstColumnChoice;
 	public static void inputFirstChoice()
 		{
 		System.out.println("Please enter the row and column of your move (e.g. A1)");
 		Scanner input = new Scanner(System.in);
 		firstChoice = input.nextLine();
-		int randomNumber = (int) (Math.random() * 2) + 1;
-		switch (randomNumber)
+		switch (firstChoice.substring(0,1))
 		{
-		
-		case 1:
+		case "A":
+		case "a":
 			{
-			Layout.layout[1][2] = "X";
-			Layout.layout[1][3] = "X";
-			Layout.layout[1][4] = "X";		
+			firstRowChoice = 0;
 			break;
 			}
-		case 2:
+		case "B":
+		case "b":
 			{
-			Layout.layout[2][2] = "X";
-			Layout.layout[2][3] = "X";
-			Layout.layout[2][4] = "X";
+			firstRowChoice = 1;
 			break;
 			}
-		case 3:
+		case "C": 
+		case "c":
 			{
-			Layout.layout[3][2] = "X";
-			Layout.layout[3][3] = "X";
-			Layout.layout[3][4] = "X";
+			firstRowChoice = 2;
 			break;
 			}
-		
+		case "D": 
+		case "d":
+			{
+			firstRowChoice = 3;
+			break;
+			}
+		case "E":
+		case "e":
+			{
+			firstRowChoice = 4;
+			}
+		case "F":
+		case "f":
+			{
+			firstRowChoice = 5;
+			}
+		case "G":
+		case "g":
+			{
+			firstRowChoice = 6;
+			}
 		}
-		
-
-	}
 	
-	}
+	firstColumnChoice = Integer.parseInt(firstChoice.substring(1)) - 1;
+	System.out.println();
+	
+		while (PlayGame.isValidMove());
+}
+		}
+	
+

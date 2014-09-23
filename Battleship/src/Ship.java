@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Ships
+public class Ship
 	{
 	int shipValue;
 	String shipName;
-	
-	public Ships(int sv, String sn)
+	static ArrayList <Ship> data = new ArrayList <Ship>();
+	public Ship(String sn, int sv)
 		{
 		shipValue = sv;
 		shipName = sn;
@@ -13,7 +13,7 @@ public class Ships
 		
 	public static void main(String[] args)
 		
-		static ArrayList <Layout> data = new ArrayList <Layout>();
+		
 			{
 		data.add(new Ship("Aircraft carrier" , 4));
 		data.add(new Ship("Battleship", 3));
