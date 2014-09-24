@@ -39,24 +39,46 @@ public class Choosing
 		case "e":
 			{
 			firstRowChoice = 4;
+			break;
 			}
 		case "F":
 		case "f":
 			{
 			firstRowChoice = 5;
+			break;
 			}
 		case "G":
 		case "g":
 			{
 			firstRowChoice = 6;
+			break;
 			}
 		}
-	
+	System.out.println("hi1");
 	firstColumnChoice = Integer.parseInt(firstChoice.substring(1)) - 1;
 	System.out.println();
-	
-		while (PlayGame.isValidMove());
+		 
+		
+		
+				
+				System.out.println("hi2");
+				System.out.println(Layout.layout[firstColumnChoice][firstRowChoice]);
+				if (Layout.layout[firstRowChoice][firstColumnChoice].equals("X"))
+					{
+					System.out.println("hi3");
+					System.out.println("You hit something");
+					}
+				else
+					{
+					System.out.println("hi4");
+					System.out.println("You Missed! Try again");
+					}
+				
+				System.out.println("hi5");
+			
+	}
 }
-		}
+
+		
 	
 

@@ -11,7 +11,7 @@ public class Ship
 		shipName = sn;
 		}
 		
-	public static void main(String[] args)
+	public static void shipData()
 		
 		
 			{
